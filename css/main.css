@@ -47,12 +47,20 @@ a img {
 /* END RESET*/
 
 /* GLOBAL STYLES */
+.content-container {
+  flex: 1 1 auto;
+  padding-top: 10vh;
+  width: 100%;
+}
 html {
   box-shadow: 0 0 0 30px #000 inset;
   padding: 0 30px;
 }
 body {
+  display: flex;
+  flex-direction: column;
   font-family: helvetica, arial, sans;
+  min-height: 100vh;
 }
 h1 {
   font-size: 7vw;
@@ -66,13 +74,9 @@ a {
 }
 p {
   line-height: 1.5;
+  margin: 0.75em 0;
 }
 h2 ~ p {
-  font-size: 0.8em;
-  font-style: italic;
-  margin: 1em auto 0;
-  max-width: 70%;
-  text-align: center;
 }
 
 /* HEADER STYLES */
@@ -163,7 +167,7 @@ h2 ~ p {
   background-color: #c7dbfc;
   background-size: cover;
   box-sizing: border-box;
-  height: 100vh;
+  height: 90vh;
   padding-top: 10vh;
 }
 .full-hero::after {
@@ -235,40 +239,50 @@ h2 ~ p {
 .home-section {
   margin: 6rem auto;
   max-width: 980px;
-  width: 90vw;
+  width: 98vw;
 }
 .home-section h2 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
 .home-callout {
+  align-items: center;
   background-color: #000;
   color: #fff;
+  display: flex;
   padding: 7vh 0;
 }
+.home-callout h3 {
+  color: inherit;
+  margin-top: 1em;
+}
 .callout-title {
+  flex: 1;
   font-size: 5.75vw;
   text-align: right;
   text-transform: uppercase;
 }
 .callout-copy {
+  flex: 0 0 45em;
   font-size: 0.8rem;
+  padding: 0 3vw;
 }
 
 /* BIO STYLES */
 .bio-wrapper {
   font-size: 24px;
-  margin: auto;
+  margin: 3rem;
   max-width: 960px;
+  width: 90vw;
   overflow: hidden;
 }
 .bio-box {
   box-sizing: border-box;
   float: left;
   font-size: 1rem;
-  margin: 6rem;
-  padding: 0 3%;
-  width: 33%;
+  margin: 2 rem;
+  padding: 0 2%;
+  width: 30%;
 }
 .bio-box h3 {
   color: #fff;
