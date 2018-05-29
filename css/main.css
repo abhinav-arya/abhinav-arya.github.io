@@ -60,13 +60,20 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  font-family: helvetica, arial, sans;
+  font-famiyl: helvetica, arial, sans;
+  /* font-family: 'Open Sans', helvetica, arial, sans; to be fixed - google font*/
   min-height: 100vh;
 }
 h1 {
   font-size: 7vw;
   margin-top: 0;
 }
+/* -- Not working - google font - to be fixed
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Raleway', helvetica, arial, sans;
+  min-height: 100vh;
+}
+*/
 h2 {
   font-size: 2em;
 }
@@ -78,7 +85,7 @@ h4 {
 a {
   color: #6397b5;
 }
-p {
+ {
   line-height: 1.5;
   margin: 0.75em 0;
 }
@@ -271,15 +278,15 @@ h2 ~ p {
   color: #fff;
   display: inline-block;
   font-family: helvetica, arial, sans;
-  font-size: 1rem;
+  font-size: 1.7rem;
   font-weight: bold;
-  height: 2.5em;
+  height: 1.5em;
   line-height: 1;
-  padding-top: 0.85em;
+  padding-top: 0.25em;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
-  width: 2.5em;
+  width: 1.5em;
 }
 .social-list > li {
   display: inline-block;
@@ -645,7 +652,7 @@ h2 ~ p {
   .header-nav li:first-child a {
     color: #fff;
   }
-  
+
   /* HIDE DROPDOWN IN THE NAV MENU */
   .header-nav .dropdown:hover .drop-menu,
   .header-nav .drop-trigger:after {
